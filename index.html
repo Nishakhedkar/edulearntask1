@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EduLearn Coaching Institute</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>EduLearn Coaching Institute</h1>
+  <nav>
+    <a onclick="showPage('home')">Home</a>
+    <a onclick="showPage('about')">About</a>
+    <a onclick="showPage('contact')">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div>
+    <h1>Learn Today, Lead Tomorrow</h1>
+    <p>Future-ready skills with expert guidance</p>
+  </div>
+</div>
+
+<section id="home" class="active">
+  <h2 class="section-title">Our Courses</h2>
+  <div class="courses">
+    <div class="course"><h3>Java Full Stack</h3><p>Complete backend + frontend mastery.</p></div>
+    <div class="course"><h3>Python Programming</h3><p>From basics to real-world projects.</p></div>
+    <div class="course"><h3>Web Development</h3><p>HTML, CSS, JS & modern UI design.</p></div>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About EduLearn</h2>
+  <div class="about-box">
+    <p><strong>Welcome to EduLearn</strong>, a learning platform created to make education simple and engaging.</p>
+    <p>We focus on practical skills, clarity, and real-world learning.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact Us</h2>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <p>📍 Pune, Maharashtra</p>
+      <p>📞 +91 98765 43210</p>
+      <p>✉ edulearn@gmail.com</p>
+    </div>
+
+    <form onsubmit="submitForm(event)">
+      <input placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button>Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>© 2025 EduLearn Coaching Institute</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
